@@ -27,7 +27,7 @@ fetch(url)
 //   console.log('Checkout this JSON! ', out.results);
 let movies = 
   out.results.forEach(element => {
-      console.log(element);
+      // console.log(element);
       let poster = 'https://image.tmdb.org/t/p/w500'+element.poster;
       let title = element.original_title;
       
