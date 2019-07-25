@@ -20,7 +20,7 @@ const urlB64touint8array = (base64string) => {
   return outputArray;
 }
 
-const setupNotification = () => {
+const checkStatusSubscription = () => {
   if(!window.PushManager) {
     console.log('notification is not support');
     return;
@@ -50,7 +50,7 @@ const setupServiceWorker = () => {
     .then(function(reg) {
       console.info('SW is registered.', reg);
       swReg = reg;
-      setupNotification();
+      checkStatusSubscription();
     })
     .catch(function() {
       console.error('Failed to register SW.');
