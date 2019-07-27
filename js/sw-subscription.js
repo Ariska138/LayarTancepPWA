@@ -25,7 +25,6 @@ const urlB64touint8array = (base64string) => {
   return outputArray;
 };
 
-
 const subscriptionUser = () => {
     console.log('dari public key');
     console.log(publicKey);
@@ -118,6 +117,7 @@ const setupServiceWorker = () => {
 };
 
 setupServiceWorker();
+
 btnNotification.addEventListener('click', function() {
     btnNotification.disabled = true;
     infoNotification.textContent = '';
