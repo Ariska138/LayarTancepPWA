@@ -86,6 +86,7 @@ const checkStatusSubscription = () => {
         console.log(publicKey);
         console.log('code push on server');
         console.log(JSON.stringify(subscription));
+        console.log('check to https://web-push-codelab.glitch.me/');
     }else{
         infoNotification.textContent = 'user is not subscribed';
         btnNotification.textContent = 'Enable Notification';
