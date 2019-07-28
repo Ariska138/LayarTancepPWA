@@ -3,11 +3,36 @@
 const cacheVersion = 'pwa-dasar-v1';
 
 const filesToCache = [
-    '/index.html',
+    '/', //index.html
+    '/pages/settings.html',
     '/libs/css/materialize.min.css',
+    '/css/style.css',
     '/libs/js/materialize.min.js',
-    '/libs/js/jquery-3.4.1.min.js'
+    '/libs/js/jquery-3.4.1.min.js',
+    '/js/script.js',
+    '/assets/img/film.png'
 ];
+
+self.addEventListener('install', function(event){
+    event.waitUntil(
+        caches.open(cacheVersion)
+        .then(function(cache){
+            return cache.addAll(filesToCache);
+        })
+    );
+});
+
+self.addEventListener('fetch', function(event){
+    event.respondWith(
+        caches.match(event.request)
+        .then(function(res){
+            console.log(res);
+            if(res)return res;
+            
+            return fetch(event.request);
+        })
+    )
+});
 
 self.addEventListener('push', function(event){
 
