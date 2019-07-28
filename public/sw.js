@@ -10,7 +10,8 @@ const filesToCache = [
     '/libs/js/materialize.min.js',
     '/libs/js/jquery-3.4.1.min.js',
     '/js/script.js',
-    '/assets/img/film.png'
+    '/assets/img/film.png',
+    '/assets/img/badge.png'
 ];
 
 self.addEventListener('install', function(event){
