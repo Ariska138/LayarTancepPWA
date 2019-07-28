@@ -1,3 +1,14 @@
+'use strict';
+
+const cacheVersion = 'pwa-dasar-v1';
+
+const filesToCache = [
+    '/index.html',
+    '/libs/css/materialize.min.css',
+    '/libs/js/materialize.min.js',
+    '/libs/js/jquery-3.4.1.min.js'
+];
+
 self.addEventListener('push', function(event){
 
 console.log(`info push "${event.data.text()}"`);
