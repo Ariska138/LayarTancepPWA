@@ -1,0 +1,22 @@
+{
+    "name": "Layar Tancep PWA",
+    "short_name": "Layar Tancep",
+    "description": "Belajar Membuat aplikasi PWA",
+    "lang": "id-ID",
+    "start_url": "/",
+    "display": "fullscreen",
+    "icons": [
+      {
+        "src": "assets/img/badge.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }
+    ],
+    "screenshots": [
+      {
+        "src": "assets/img/ss.png",
+        "sizes": "1280x720",
+        "type": "image/png"
+      }
+    ]
+  }
