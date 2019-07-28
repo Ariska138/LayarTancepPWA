@@ -9,3 +9,5 @@ http://demo.geekslabs.com/materialize/v2.1/layout03/index.html
 #Test#
 firebase-deploy
 try with hosting firebase https://layar-tancep-pwa.firebaseapp.com/
+atau
+http://bit.ly/layartanceppwa
