@@ -106,7 +106,7 @@ const setupServiceWorker = () => {
       return;
     }
 
-  navigator.serviceWorker.register('/sw.js')
+  navigator.serviceWorker.register('../sw.js')
     .then(function(reg) {
       console.info('SW is registered.', reg);
       swReg = reg;

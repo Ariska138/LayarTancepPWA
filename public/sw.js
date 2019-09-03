@@ -3,15 +3,15 @@
 const cacheVersion = 'pwa-dasar-v1';
 
 const filesToCache = [
-    '/', //index.html
-    '/pages/settings.html',
-    '/libs/css/materialize.min.css',
-    '/css/style.css',
-    '/libs/js/materialize.min.js',
-    '/libs/js/jquery-3.4.1.min.js',
-    '/js/script.js',
-    '/assets/img/film.png',
-    '/assets/img/badge.png'
+    'index.html',
+    'pages/settings.html',
+    'libs/css/materialize.min.css',
+    'css/style.css',
+    'libs/js/materialize.min.js',
+    'libs/js/jquery-3.4.1.min.js',
+    'js/script.js',
+    'assets/img/film.png',
+    'assets/img/badge.png'
 ];
 
 self.addEventListener('install', function(event){
@@ -42,8 +42,8 @@ console.log(`info push "${event.data.text()}"`);
 let title = 'Info Layar Tancep';
 let option = {
     'body'  : event.data.text(),
-    'badge' : '../assets/img/badge.png',
-    'icon'  : '../assets/img/logo.jpg',
+    'badge' : 'assets/img/badge.png',
+    'icon'  : 'assets/img/logo.jpg',
     actions: [
         {action: 'oke', title: 'Oke'},
         {action: 'google', title: 'Google'}]
