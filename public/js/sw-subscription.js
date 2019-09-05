@@ -4,6 +4,7 @@ const btnNotification = document.querySelector('.js-btn-notification');
 btnNotification.disabled = true;
 
 const infoNotification = document.querySelector('.js-notification-info');
+const codeNotif = document.querySelector('.js-code-notif');
 
 const publicKey = 'BLgI3_rCblhmRmhS07nsUr8Py5Kx-3XZrJL4k1vU6giQ9For3PskrO3a3wLlww0Nv2pI8XhNmuSOjDd32lb5Yok';
 let swReg = null;
@@ -80,12 +81,13 @@ const checkStatusSubscription = () => {
     if(isSubscribed) {
         // munculkan code untuk push notification dan tampilan button disable
         infoNotification.textContent = 'user is subcribed';
-        btnNotification.textContent = 'Disable Notificaation';
+        btnNotification.textContent = 'Disable Notification';
         console.log('user is subcribed');
         console.log('public key');
         console.log(publicKey);
         console.log('code push on server');
         console.log(JSON.stringify(subscription));
+        codeNotif.textContent = JSON.stringify(subscription);
         console.log('check to https://web-push-codelab.glitch.me/');
     }else{
         infoNotification.textContent = 'user is not subscribed';
