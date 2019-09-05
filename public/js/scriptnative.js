@@ -17,7 +17,7 @@
 
 
 function myFunction() {
-let url = 'https://api.themoviedb.org//3/movie/popular?page=1&language=id-ID&api_key=4bb78427622b52b4a580fe4ebb973c44';
+let url = 'https://api.themoviedb.org/3/movie/popular?page=1&language=id-ID&api_key=4bb78427622b52b4a580fe4ebb973c44';
 let listMovies = '';
 let elmListMovies = document.getElementById('list_movies');
 let elmDiv = document.createElement('div');

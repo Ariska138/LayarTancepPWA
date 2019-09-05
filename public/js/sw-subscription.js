@@ -5,7 +5,7 @@ btnNotification.disabled = true;
 
 const infoNotification = document.querySelector('.js-notification-info');
 
-const publicKey = 'BGyeou9eViNyGJJodeu3jB9LvpNQVs1nS6rSGwXx3XlOn4uTOUDBdMeiFX-2JdDyX0r3m3o-EBFYxLpT3Gxmp5I';
+const publicKey = 'BLgI3_rCblhmRmhS07nsUr8Py5Kx-3XZrJL4k1vU6giQ9For3PskrO3a3wLlww0Nv2pI8XhNmuSOjDd32lb5Yok';
 let swReg = null;
 let isSubscribed = false;
 
@@ -113,7 +113,7 @@ const setupServiceWorker = () => {
       checkStatusSubscription();
     })
     .catch(function() {
-      console.error('Failed to register SW.');
+      console.info('Failed to register SW.');
     });
 };
 
