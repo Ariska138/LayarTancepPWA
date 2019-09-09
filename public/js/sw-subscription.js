@@ -6,7 +6,7 @@ btnNotification.disabled = true;
 const infoNotification = document.querySelector('.js-notification-info');
 const codeNotif = document.querySelector('.js-code-notif');
 
-const publicKey = 'BLgI3_rCblhmRmhS07nsUr8Py5Kx-3XZrJL4k1vU6giQ9For3PskrO3a3wLlww0Nv2pI8XhNmuSOjDd32lb5Yok';
+const publicKey = 'BBSruOxqKtlTjxmbVMoL9grjz_YZLPKNr9j3nncNLaRSUCP0JrCdKGyjzqhXDeYkUGVA4phWjiDtL_Wg3cDQEA0';
 let swReg = null;
 let isSubscribed = false;
 
